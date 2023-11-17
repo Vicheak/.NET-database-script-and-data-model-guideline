@@ -1,0 +1,72 @@
+=> Data Modeling :
+
++ Step 1 : Understand about requirement or business rule 
+  1. Entities = Entity set = Relation = Table
+  2. Define each entity attributes (single-valued attribute,
+     multi-value attribute, derived attribute, ...)
+  3. Define key for each entity (composite key, candidate key,
+     super key, primary key or identifier, foreign key, unique key, 
+     unique constraints, index, ...)
+
++ Step 2 : Build Conceptual Data Model (Business processes + rules)
+  1. Use any platforms (Ex: draw.io, Microsoft visio, ...)
+  2. Build entities and their attributes in view of ER diagram 
+  3. Define entity relation (relationship : 1:1, 1:M, M:M) and
+     relationship degree (unary relationship, binary relationship,
+     ternary relationship)
+
++ Step 3 : Build Logical Data Model (Data types + Normalization)
+  1. Define Data type for all attributes and specific keys for attributes
+  2. Define existence dependence and existence independence 
+     (optional or mandatory)
+
++ Step 4 : Build Physical Data Model (Realistic Database) 
+  1. Choose between relational and non-relational database
+     (Relational DB or SQL-based DB : MS SQL Server, PostgreSQL, MySQL, MS Access, 
+      Oracle, ...
+      Non-relational or NO-SQL DB : MongoDB, Apache Cassendra, ...)
+  2. Use DDL for : 
+     - Create Table (Convert Entity to Table -> Primary key + Foreign key)
+     - Create View (More flexible than table)
+     - Create Stored Procedured
+     - Create User-Defined Function
+     Use DML for manipulated purpose
+     Use DCL for authentication and authorization purpose
+  3. Use any database version control (tracking the database process)
+     (Ex: Liquibase, ...) 
+
+=> Data Normalization : is the process which we have to check and recheck
+   the database structure to make sure that there is less data redundancies
+   (data redundancies -> data anomalies -> data normalization) 
+
++ Normalization process : is the process to reduce data redundancies 
+  (called Normal Form : there are 1NF, 2NF, 3NF, 4NF, BCNF, ....)
+  1. High Normal Form : reduce the use of storage but slow speed
+  2. Denormalization : help increase speed but waste storage
+
++ Data Anomalies : 
+  1. Insert anomalies
+  2. Update anomalies
+  3. Delete anomalies
+
++ Normal Form follows the use of functional dependence : 
+  Here is the summary about how to define functional dependence :
+  -> Definition 1 : Column A defines column B or column B depends on column A,
+     if all data on column A are the same, all data on column B is so
+  -> Definition 2 : Column A defines column B or column B depends on column A,
+     if there is one data on column A, it defines only one data on column B
+
+  Ex: A -> B, A is determinant and B is called dependent
+  
+  Types of functional dependence :
+  1. Partial functional dependency : A, B -> C, D
+  2. Fully functional depencency : A -> B or A, B -> C
+  3. Transitive functional dependency : 
+     A -> C, because of A -> B and B -> C
+
++ Steps to normalize the whole database structure : 
+  1. 1NF -> remove repeating group,
+            define primary keys,
+            find all functional dependences
+  2. 2NF -> remove partial functional dependencies
+  3. 3NF -> remove transitive functional dependencies
