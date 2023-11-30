@@ -33,19 +33,19 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_49BF8996C49C3F2166AB488687262426"
-        "OwnerKey" = "8:_5F0E5DECCC3243AAB5C36B78EC730A3A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5AB34175FA3E47FDAD3CA824D4C793B8"
+        "MsmKey" = "8:_44740C03FA40498797CB6F0D7FCD95E5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_5F0E5DECCC3243AAB5C36B78EC730A3A"
+        "MsmKey" = "8:_49BF8996C49C3F2166AB488687262426"
+        "OwnerKey" = "8:_9B7D3A8C48DC4F1680795301CB5C6662"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5AB34175FA3E47FDAD3CA824D4C793B8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -57,7 +57,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A52E1C056FAC44E884715A45B95DCA02"
+        "MsmKey" = "8:_9B7D3A8C48DC4F1680795301CB5C6662"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -88,7 +88,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5F0E5DECCC3243AAB5C36B78EC730A3A"
+        "OwnerKey" = "8:_9B7D3A8C48DC4F1680795301CB5C6662"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -170,6 +170,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -281,6 +289,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_44740C03FA40498797CB6F0D7FCD95E5"
+            {
+            "SourcePath" = "8:..\\EmployeeSalaryMGProj\\bin\\Debug\\EmployeeSalaryMGProj.exe.config"
+            "TargetName" = "8:EmployeeSalaryMGProj.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_A15EF999E9F54232B2A540C88E5CBF3F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_49BF8996C49C3F2166AB488687262426"
             {
             "AssemblyRegister" = "3:1"
@@ -332,37 +360,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5F0E5DECCC3243AAB5C36B78EC730A3A"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:EmployeeSalaryMGProj, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_5F0E5DECCC3243AAB5C36B78EC730A3A"
-                    {
-                    "Name" = "8:EmployeeSalaryMGProj.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\EmployeeSalaryMGProj\\bin\\Debug\\EmployeeSalaryMGProj.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_A15EF999E9F54232B2A540C88E5CBF3F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_614A3A9A142AFE77D47DA531428DB8B2"
             {
             "AssemblyRegister" = "3:1"
@@ -394,10 +391,21 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A52E1C056FAC44E884715A45B95DCA02"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9B7D3A8C48DC4F1680795301CB5C6662"
             {
-            "SourcePath" = "8:..\\EmployeeSalaryMGProj\\bin\\Debug\\EmployeeSalaryMGProj.exe.config"
-            "TargetName" = "8:EmployeeSalaryMGProj.exe.config"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:EmployeeSalaryMGProj, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_9B7D3A8C48DC4F1680795301CB5C6662"
+                    {
+                    "Name" = "8:EmployeeSalaryMGProj.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\EmployeeSalaryMGProj\\bin\\Debug\\EmployeeSalaryMGProj.exe"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A15EF999E9F54232B2A540C88E5CBF3F"
             "Condition" = "8:"
@@ -653,7 +661,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_4AFAC79692DA454A80A1EBEA5479F000"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_62B7E9BD37C04A0786C0F2B3F0DC3423"
             {
             "Name" = "8:ESM"
             "Arguments" = "8:"
@@ -661,13 +669,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_5F0E5DECCC3243AAB5C36B78EC730A3A"
+            "Target" = "8:_9B7D3A8C48DC4F1680795301CB5C6662"
             "Folder" = "8:_DFCC764F677F443D8CE8E474FC0E5694"
             "WorkingFolder" = "8:_A15EF999E9F54232B2A540C88E5CBF3F"
             "Icon" = "8:_135C00AF45ED446A94A80D187826141D"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8689A7DD43ED40B187A311A9114212A9"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_AF2A52EED9D64A1790F86230A3E8292F"
             {
             "Name" = "8:ESM"
             "Arguments" = "8:"
@@ -675,7 +683,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_5F0E5DECCC3243AAB5C36B78EC730A3A"
+            "Target" = "8:_9B7D3A8C48DC4F1680795301CB5C6662"
             "Folder" = "8:_469A5C5417C34FC7932FF4C1FC0D7FEE"
             "WorkingFolder" = "8:_A15EF999E9F54232B2A540C88E5CBF3F"
             "Icon" = "8:_135C00AF45ED446A94A80D187826141D"
